@@ -97,7 +97,7 @@ export default (opt = {}) => {
 				
 				let src = isURL(file) ? file : absolutePathPrefix + relative(destDir, file).replace(/\\/g, '/');
 				if (onlinePath) { 
-					const filename = file.split('/').slice(-1)[0];
+					const filename = isURL(file) ? file.split('/').slice(-1)[0] : relative(destDir, file).replace(/\\/g, '/');
 					const slash = onlinePath.slice(-1) === '/' ? '' : '/';
 					src = onlinePath + slash + filename;
 				}
