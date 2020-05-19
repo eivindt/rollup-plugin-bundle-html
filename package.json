@@ -22,7 +22,7 @@
   "scripts": {
     "build": "rollup -c",
     "eslint": "eslint src",
-    "prepublish": "npm run eslint && npm run build"
+    "prepare": "npm run eslint && npm run build"
   },
   "devDependencies": {
     "eslint": "^6.5.1",
