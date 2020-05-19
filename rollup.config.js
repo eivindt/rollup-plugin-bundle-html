@@ -13,6 +13,8 @@ export default {
   plugins: [
     resolve(),
     commonjs(),
-    buble()
+    buble(
+	{ transforms: { forOf: false, asyncAwait: false } }
+    )
   ]
 };
