@@ -22,8 +22,8 @@
   "scripts": {
     "build": "rollup -c",
     "eslint": "eslint src",
-    "prepare": "npm run eslint && npm run build",
-    "postinstall": "npm run build"
+    "prepare": "echo PREPARE && npm run eslint && npm run build",
+    "postinstall": "echo POSTINSTALL && npm run build"
   },
   "devDependencies": {
     "eslint": "^6.5.1",
