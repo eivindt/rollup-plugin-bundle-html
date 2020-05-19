@@ -23,7 +23,6 @@
     "build": "rollup -c",
     "eslint": "eslint src",
     "prepare": "echo PREPARE && npm run eslint && npm run build",
-    "preinstall": "echo PREINSTALL && npm run build",
     "postinstall": "echo POSTINSTALL && npm run build",
     "prepublish": "echo PREPUBLISH && npm run build",
     "prepublishOnly": "echo PREPUBLISHONLY && npm run build"
